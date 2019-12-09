@@ -1,0 +1,1 @@
+INSERT OVERWRITE TABLE analysis SELECT Hack_License,Fare_Amount,Surcharge,Mta_Tax,Tip_Amount,Tolls_Amout,Total_Amount, TO_DATE(pickup_datetime),date_format(pickup_datetime ,'u'),hour(pickup_datetime) FROM fair;

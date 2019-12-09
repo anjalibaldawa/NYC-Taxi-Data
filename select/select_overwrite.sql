@@ -1,0 +1,1 @@
+Select day, count (day) from analysis GROUP BY day ORDER BY day ASC;
