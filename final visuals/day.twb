@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20193.19.0821.2225                               -->
+<workbook original-version='18.1' source-build='2019.3.0 (20193.19.0821.2225)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='day' inline='true' name='federated.01oeotz0a4sm5w10atol20rpdnp8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='day' name='textscan.1i5vo3d1qu10nz1fzrcz30eefo93'>
+            <connection class='textscan' directory='C:/Users/Asus/Desktop/analysis' filename='day.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1i5vo3d1qu10nz1fzrcz30eefo93' name='day.csv' table='[day#csv]' type='table'>
+          <columns character-set='UTF-8' header='no' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='F2' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[day.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;false&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[day.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F2]</local-name>
+            <parent-name>[day.csv]</parent-name>
+            <remote-alias>F2</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' caption='day' datatype='integer' name='[F1]' role='dimension' type='ordinal' />
+      <column caption='trip_count' datatype='integer' name='[F2]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.475962' measure-ordering='alphabetic' measure-percentage='0.524038' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='midnight' inline='true' name='federated.156aifc0uiko0s1cesxla1rrznad' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='midnight' name='textscan.1e1wbws0wtbzzt0zn13lz0crpcv5'>
+            <connection class='textscan' directory='C:/Users/Asus/Desktop/analysis' filename='midnight.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1e1wbws0wtbzzt0zn13lz0crpcv5' name='midnight.csv' table='[midnight#csv]' type='table'>
+          <columns character-set='UTF-8' header='no' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='F2' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[midnight.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;false&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[midnight.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F2]</local-name>
+            <parent-name>[midnight.csv]</parent-name>
+            <remote-alias>F2</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' caption='day' datatype='integer' name='[F1]' role='dimension' type='ordinal' />
+      <column caption='trip_count' datatype='integer' name='[F2]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.427885' measure-ordering='alphabetic' measure-percentage='0.572115' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='day' name='federated.01oeotz0a4sm5w10atol20rpdnp8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01oeotz0a4sm5w10atol20rpdnp8'>
+            <column aggregation='Sum' caption='day' datatype='integer' name='[F1]' role='dimension' type='ordinal' />
+            <column caption='trip_count' datatype='integer' name='[F2]' role='measure' type='quantitative' />
+            <column-instance column='[F1]' derivation='None' name='[none:F1:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[F2]' derivation='Sum' name='[sum:F2:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.01oeotz0a4sm5w10atol20rpdnp8].[sum:F2:qk]</rows>
+        <cols>[federated.01oeotz0a4sm5w10atol20rpdnp8].[none:F1:ok]</cols>
+      </table>
+      <simple-id uuid='{9FE90F0D-0479-4E20-A1D1-6B68B837F457}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='75'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.01oeotz0a4sm5w10atol20rpdnp8].[none:F1:ok]</field>
+            <field>[federated.01oeotz0a4sm5w10atol20rpdnp8].[none:F2:ok]</field>
+            <field>[federated.156aifc0uiko0s1cesxla1rrznad].[none:F1:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0797586C-EE51-4509-8D6A-586F74E2A1E7}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      gg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
